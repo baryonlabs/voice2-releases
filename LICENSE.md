@@ -1,6 +1,6 @@
 # 소프트웨어 이용 허락 (라이선스)
 
-**DJI2Note (dji2note)**
+**Voice2**
 Copyright © 2026 Baryon Labs (바리온랩스). All rights reserved.
 문의: hello@baryon.ai
 
