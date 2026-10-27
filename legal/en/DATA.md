@@ -47,7 +47,7 @@ This document lists **everything** the app sends outside your Mac. Anything not 
 | Share notes (MCP) | While enabled, programs holding the token can connect to this Mac and fetch summaries, transcripts and meeting information. It is not reachable outside the same network or Tailscale unless you open it up yourself |
 
 ## 4. Update check
-Once a day the app asks GitHub (the public repository baryonlabs/dji2note-releases) for the latest version. Only an ordinary web request is made; no meeting content or install ID is sent. When you install a new version, the app verifies the downloaded file's checksum and the developer signature (Baryon Labs) before replacing the old version.
+Once a day the app asks GitHub (the public repository baryonlabs/voice2-releases) for the latest version. Only an ordinary web request is made; no meeting content or install ID is sent. When you install a new version, the app verifies the downloaded file's checksum and the developer signature (Baryon Labs) before replacing the old version.
 
 ## 5. Downloads during installation and setup
 | What is downloaded | From |
