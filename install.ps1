@@ -1,5 +1,5 @@
 <#
-DJI2Note one-line installer (Windows 10/11 x64, no admin rights needed)
+Voice2 one-line installer (Windows 10/11 x64, no admin rights needed)
 
   irm https://baryonlabs.github.io/dji2note-releases/install.ps1 | iex
 
@@ -22,11 +22,11 @@ New-Item -ItemType Directory -Force -Path $dir | Out-Null
 $setup = Join-Path $dir "DJI2NoteSetup.exe"
 
 if ([Environment]::Is64BitOperatingSystem -eq $false) {
-    Write-Host ((Ko "REpJMk5vdGXsnYAgNjTruYTtirgoeDY0KSBXaW5kb3dz6rCAIO2VhOyalO2VqeuLiOuLpC4=") + " / DJI2Note requires 64-bit (x64) Windows.") -ForegroundColor Red
+    Write-Host ((Ko "Vm9pY2Uy64qUIDY067mE7Yq4KHg2NCkgV2luZG93c+qwgCDtlYTsmpTtlanri4jri6Qu") + " / Voice2 requires 64-bit (x64) Windows.") -ForegroundColor Red
     return
 }
 
-Write-Host ((Ko "REpJMk5vdGUg64K066Ck67Cb64qUIOykkeKApg==") + " / Downloading DJI2Note...")
+Write-Host ((Ko "Vm9pY2UyIOuCtOugpOuwm+uKlCDspJHigKY=") + " / Downloading Voice2...")
 Invoke-WebRequest -Uri $url -OutFile $setup -UseBasicParsing
 
 Write-Host ((Ko "7ISk7LmYIOykkeKApg==") + " / Installing...")
@@ -35,7 +35,7 @@ Remove-Item -Recurse -Force $dir -ErrorAction SilentlyContinue
 
 $exe = Join-Path $env:LOCALAPPDATA "Baryon.DJI2Note\current\DJI2Note.exe"
 if ($p.ExitCode -eq 0 -and (Test-Path $exe)) {
-    Write-Host ((Ko "7ISk7LmYIOyZhOujjCAtIOyLnOyekSDrqZTribTsl5DshJwgREpJMk5vdGXrpbwg7Iuk7ZaJ7ZWY7IS47JqULg==") + " / Installed - launch DJI2Note from the Start menu.") -ForegroundColor Green
+    Write-Host ((Ko "7ISk7LmYIOyZhOujjCAtIOyLnOyekSDrqZTribTsl5DshJwgVm9pY2Uy66W8IOyLpO2Wie2VmOyEuOyalC4=") + " / Installed - launch Voice2 from the Start menu.") -ForegroundColor Green
     Start-Process -FilePath $exe
 } else {
     Write-Host (((Ko "7ISk7LmY7ZWY7KeAIOuqu+2WiOyKteuLiOuLpCAo7L2U65OcIHswfSkuIGh0dHBzOi8vYmFyeW9ubGFicy5naXRodWIuaW8vZGppMm5vdGUtcmVsZWFzZXMvIOyXkOyEnCDsp4HsoJEg67Cb7JWEIOyjvOyEuOyalC4=") -f $p.ExitCode) + " / Install failed. Download it from https://baryonlabs.github.io/dji2note-releases/") -ForegroundColor Red
