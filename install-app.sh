@@ -1,9 +1,9 @@
 #!/bin/bash
 # Voice2 Mac 앱 설치 (Apple Silicon) — Made by Baryon Labs
-#   curl -fsSL https://raw.githubusercontent.com/baryonlabs/dji2note-releases/main/install-app.sh | bash
+#   curl -fsSL https://voice2.baryon.ai/install-app.sh | bash
 set -euo pipefail
 
-URL="${DJI2NOTE_APP_URL:-https://github.com/baryonlabs/dji2note-releases/releases/latest/download/DJI2Note.zip}"
+URL="${DJI2NOTE_APP_URL:-https://github.com/baryonlabs/voice2-releases/releases/latest/download/DJI2Note.zip}"
 say() { printf "\033[1;34m==>\033[0m %s\n" "$*"; }
 die() { printf "\033[1;31m오류:\033[0m %s\n" "$*" >&2; exit 1; }
 
