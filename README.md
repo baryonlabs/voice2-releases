@@ -1,11 +1,11 @@
-# DJI2Note — 설치 파일
+# Voice2 — 설치 파일
 
-DJI 무선 마이크·Zoom·Mac 녹음을 받아쓰고, 화자를 나눠 회의록 요약을 만들어 Google Drive·Notion에 올려 주는 Mac 앱입니다.
-**Made by Baryon Labs (바리온랩스)** · 문의 hello@baryon.ai · 소개 https://baryonlabs.github.io/dji2note-releases/
+DJI 무선 마이크·Zoom·Mac 녹음을 받아쓰고, 화자를 나눠 회의록 요약을 만들어 Google Drive·Notion에 올려 주는 Mac·Windows 앱입니다.
+**Made by Baryon Labs (바리온랩스)** · 문의 hello@baryon.ai · 소개 https://voice2.baryon.ai/
 
 이 저장소에는 설치 파일(릴리스)만 있습니다. 최신 버전은 [Releases](../../releases/latest)에서 받으세요.
 
-- 필요: Apple Silicon(M1 이상) Mac, macOS 14 이상
+- 필요: Apple Silicon(M1 이상) Mac(macOS 14 이상) 또는 Windows 10·11 64비트
 - 설치 (터미널 한 줄, 경고 없이 바로 열림):
   ```sh
   curl -fsSL https://raw.githubusercontent.com/baryonlabs/dji2note-releases/main/install-app.sh | bash
@@ -21,7 +21,7 @@ DJI 무선 마이크·Zoom·Mac 녹음을 받아쓰고, 화자를 나눠 회의�
   curl -fsSL https://raw.githubusercontent.com/baryonlabs/dji2note-releases/main/install.sh | bash
   ```
 - 안내: [사용법](legal/HELP.md) · [데이터·AI 안내](legal/DATA.md) · [개인정보 처리방침](legal/PRIVACY.md) · [이용약관](legal/TERMS.md) · [이용 허락](LICENSE.md) · [오픈소스 고지](legal/THIRD_PARTY.md) · [저작권·상표](legal/COPYRIGHT.md)
-- 문의·의견: hello@baryon.ai · Windows 버전 알림 신청은 [소개 페이지](https://baryonlabs.github.io/dji2note-releases/#windows)에서
+- 문의·의견: hello@baryon.ai · Windows 버전 알림 신청은 [소개 페이지](https://voice2.baryon.ai/)에서
 
 © 2026 Baryon Labs. All rights reserved.
 
@@ -29,7 +29,7 @@ DJI 무선 마이크·Zoom·Mac 녹음을 받아쓰고, 화자를 나눠 회의�
 
 ## English
 
-DJI2Note is a Mac app that transcribes recordings from DJI wireless mics, Zoom and your Mac on-device, separates speakers, writes a summary that fits the situation with the AI you choose, and uploads it to Google Drive or Notion.
+Voice2 is a Mac app that transcribes recordings from DJI wireless mics, Zoom and your Mac on-device, separates speakers, writes a summary that fits the situation with the AI you choose, and uploads it to Google Drive or Notion.
 **Made by Baryon Labs** · hello@baryon.ai · https://baryonlabs.github.io/dji2note-releases/en/
 
 This repository contains installers (releases) only. Get the latest version from [Releases](../../releases/latest).
