@@ -1,5 +1,5 @@
 #!/bin/bash
-# DJI2Note Mac 앱 설치 (Apple Silicon) — Made by Baryon Labs
+# Voice2 Mac 앱 설치 (Apple Silicon) — Made by Baryon Labs
 #   curl -fsSL https://raw.githubusercontent.com/baryonlabs/dji2note-releases/main/install-app.sh | bash
 set -euo pipefail
 
@@ -18,7 +18,7 @@ mkdir -p "$DEST"
 
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
-say "DJI2Note 내려받는 중…"
+say "Voice2 내려받는 중…"
 curl -fsSL "$URL" -o "$TMP/DJI2Note.zip"
 ditto -x -k "$TMP/DJI2Note.zip" "$TMP"
 
