@@ -1,7 +1,7 @@
 # 저작권 및 상표 안내
 
 ## 앱의 저작권
-DJI2Note — **Made by Baryon Labs (바리온랩스)**
+Voice2 — **Made by Baryon Labs (바리온랩스)**
 Copyright © 2026 Baryon Labs. All rights reserved. · 문의 hello@baryon.ai
 
 ## 이용자 콘텐츠
