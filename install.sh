@@ -1,6 +1,6 @@
 #!/bin/bash
 # dji2note CLI 설치 (Apple Silicon Mac) — Made by Baryon Labs
-#   curl -fsSL https://raw.githubusercontent.com/baryonlabs/dji2note-releases/main/install.sh | bash
+#   curl -fsSL https://voice2.baryon.ai/install.sh | bash
 set -euo pipefail
 
 say() { printf "\033[1;34m==>\033[0m %s\n" "$*"; }
@@ -10,7 +10,7 @@ die() { printf "\033[1;31m오류:\033[0m %s\n" "$*" >&2; exit 1; }
 [ "$(uname -m)" = "arm64" ] || die "Apple Silicon(M1 이상) Mac이 필요합니다."
 
 # 최신 릴리스의 엔진 파일(.whl)
-WHL="${DJI2NOTE_WHEEL:-$(curl -fsSL https://api.github.com/repos/baryonlabs/dji2note-releases/releases/latest \
+WHL="${DJI2NOTE_WHEEL:-$(curl -fsSL https://api.github.com/repos/baryonlabs/voice2-releases/releases/latest \
   | grep -o '"browser_download_url": *"[^"]*\.whl"' | head -1 | cut -d'"' -f4)}"
 [ -n "$WHL" ] || die "최신 릴리스에서 엔진 파일을 찾지 못했습니다."
 
