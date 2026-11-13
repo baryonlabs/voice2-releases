@@ -16,7 +16,7 @@ $ProgressPreference = "SilentlyContinue"
 
 function Ko([string]$b64) { [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($b64)) }
 
-$url = "https://github.com/baryonlabs/voice2-releases/releases/latest/download/DJI2NoteSetup.exe"
+$url = "https://github.com/baryonlabs/voice2-releases/releases/download/v0.8.2/DJI2NoteSetup.exe"
 $dir = Join-Path $env:TEMP ("dji2note-setup-" + [Guid]::NewGuid().ToString("N"))
 New-Item -ItemType Directory -Force -Path $dir | Out-Null
 $setup = Join-Path $dir "DJI2NoteSetup.exe"
