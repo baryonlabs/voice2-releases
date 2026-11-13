@@ -3,7 +3,7 @@
 DJI 무선 마이크·Zoom·Mac 녹음을 받아쓰고, 화자를 나눠 회의록 요약을 만들어 Google Drive·Notion에 올려 주는 Mac·Windows 앱입니다.
 **Made by Baryon Labs (바리온랩스)** · 문의 hello@baryon.ai · 소개 https://voice2.baryon.ai/
 
-이 저장소에는 설치 파일(릴리스)만 있습니다. 최신 버전은 [Releases](../../releases/latest)에서 받으세요.
+이 저장소에는 설치 파일(릴리스)만 있습니다. **macOS 최신 버전은 [Releases](../../releases/latest)**, Windows는 **0.8.2 설치 파일**을 사용하세요. Windows 0.9.1은 빌드 준비 중입니다.
 
 - 필요: Apple Silicon(M1 이상) Mac(macOS 14 이상) 또는 Windows 10·11 64비트
 - 설치 (터미널 한 줄, 경고 없이 바로 열림):
@@ -15,7 +15,7 @@ DJI 무선 마이크·Zoom·Mac 녹음을 받아쓰고, 화자를 나눠 회의�
   ```powershell
   irm https://voice2.baryon.ai/install.ps1 | iex
   ```
-  또는 Releases의 `DJI2NoteSetup.exe` 실행 (처음엔 "Windows의 PC 보호" → 추가 정보 → 실행)
+  또는 [0.8.2 Windows 설치 파일](https://github.com/baryonlabs/voice2-releases/releases/download/v0.8.2/DJI2NoteSetup.exe) 실행 (처음엔 "Windows의 PC 보호" → 추가 정보 → 실행). Windows 0.9.1은 준비 중입니다.
 - 터미널(CLI)만 쓰려면:
   ```sh
   curl -fsSL https://voice2.baryon.ai/install.sh | bash
@@ -32,7 +32,7 @@ DJI 무선 마이크·Zoom·Mac 녹음을 받아쓰고, 화자를 나눠 회의�
 Voice2 is a Mac app that transcribes recordings from DJI wireless mics, Zoom and your Mac on-device, separates speakers, writes a summary that fits the situation with the AI you choose, and uploads it to Google Drive or Notion.
 **Made by Baryon Labs** · hello@baryon.ai · https://voice2.baryon.ai/en/
 
-This repository contains installers (releases) only. Get the latest version from [Releases](../../releases/latest).
+This repository contains installers (releases) only. Get the latest **macOS** version from [Releases](../../releases/latest). Windows uses the **0.8.2 installer** for now; Windows 0.9.1 is pending.
 
 - Requires: Apple Silicon (M1 or later) Mac, macOS 14 or later. Free.
 - Install (one line in Terminal, opens without a security warning):
